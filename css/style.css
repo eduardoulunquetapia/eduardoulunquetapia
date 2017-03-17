@@ -1,0 +1,25 @@
+/*
+*constant
+*/
+/*
+*varibles mixin..extend...
+*/
+/*
+*style
+*/
+body {
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+  color: grey;
+  background-color: rgba(128, 43, 103, 0.05); }
+
+.cv {
+  padding: 20px 0; }
+
+.row {
+  margin: 3px; }
+
+.box {
+  border-radius: 5px;
+  background-color: snow;
+  box-shadow: 0px 0px 4px rgba(193, 128, 173, 0.4); }

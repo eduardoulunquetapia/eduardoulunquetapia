@@ -1,0 +1,60 @@
+/*
+*constant
+*/
+
+//font
+$font1: 'Poppins',
+sans-serif;
+$font2: 'Lora',
+serif;
+//color
+// Palette URL: http://paletton.com/#uid=1540u0kllllaFw0g0qFqFg0w0aF */
+// As hex codes */
+$color-primary-0: #802B67; // Main Primary color */
+$color-primary-1: #C180AD;
+$color-primary-2: #A15088;
+$color-primary-3: #601048;
+$color-primary-4: #40002D;
+// As RGBa codes */
+$rgba-primary-0: rgba(128, 43, 103, 1); // Main Primary color */
+$rgba-primary-1: rgba(193, 128, 173, 1);
+$rgba-primary-2: rgba(161, 80, 136, 1);
+$rgba-primary-3: rgba( 96, 16, 72, 1);
+$rgba-primary-4: rgba( 64, 0, 45, 1);
+//color text
+$text-color:grey;
+//font size
+$font-size-large:1.6em;
+$font-size-medium:1.4em;
+$font-size-small:1.2em;
+$font-size-small-x:0.9em;
+
+/*
+*varibles mixin..extend...
+*/
+
+
+/*
+*style
+*/
+
+body {
+    font-size: 1em;
+    font-family: $font1;
+    color: $text-color;
+    background-color: rgba($color-primary-0, 0.05);
+}
+
+.cv {
+    padding: 20px 0;
+}
+
+.row {
+    margin: 3px;
+}
+
+.box {
+    border-radius: 5px;
+    background-color: snow;
+    box-shadow: 0px 0px 4px rgba($color-primary-1, 0.4);
+}
