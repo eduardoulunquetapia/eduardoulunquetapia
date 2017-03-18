@@ -1,25 +1,153 @@
 /*
-*constant
+*TEMA = constants : (colores, estilos, fuentes) 
 */
 /*
-*varibles mixin..extend...
+*MODULOS = (botones, iconos, widget):varibles mixin..extend...
+*/
+.box, .left, .rigth {
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 5px;
+  background-color: snow;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); }
+
+.subTitle, .left-skill, .left-language, .left-soft {
+  padding: 15px; }
+  .subTitle h2, .left-skill h2, .left-language h2, .left-soft h2 {
+    font-size: 2.24em;
+    margin-left: 10px; }
+
+.barIntro, .left-skill-item:nth-child(2) .barUnder .barOn, .left-skill-item:nth-child(3) .barUnder .barOn, .left-skill-item:nth-child(4) .barUnder .barOn, .left-skill-item:nth-child(5) .barUnder .barOn, .left-skill-item:nth-child(6) .barUnder .barOn {
+  padding: 1px;
+  color: white;
+  text-align: center;
+  font-size: 1.6em;
+  background-color: rgba(128, 43, 103, 0.8);
+  border-radius: 10px; }
+
+/*
+*ESTADOS = accion a un evento de javascript: .is-hide/.is-show
 */
 /*
-*style
+* BASE= (inicializar elementos):elementos html
 */
 body {
   font-size: 1em;
   font-family: "Poppins", sans-serif;
   color: grey;
-  background-color: rgba(128, 43, 103, 0.05); }
+  background-color: rgba(64, 0, 45, 0.1); }
 
-.cv {
-  padding: 20px 0; }
+i {
+  color: #A15088;
+  margin-top: 10px; }
 
+hr {
+  width: 90%; }
+
+h2 {
+  display: inline-block; }
+
+/*
+*LAYOUT= maquetacion :style
+*/
 .row {
-  margin: 3px; }
+  margin: 2px; }
 
-.box {
-  border-radius: 5px;
-  background-color: snow;
-  box-shadow: 0px 0px 4px rgba(193, 128, 173, 0.4); }
+.left {
+  text-transform: capitalize; }
+  .left-image {
+    position: relative; }
+    .left-image .name {
+      font-size: 2.88em;
+      padding: 0 30px 90px 0;
+      color: white;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+  .left-data {
+    font-size: 1.6em;
+    text-transform: capitalize;
+    padding: 15px; }
+    .left-data-item {
+      display: inline-block;
+      margin-left: 10px; }
+      .left-data-item:nth-child(8) {
+        text-transform: lowercase; }
+  .left-skill-item {
+    /*  .barUnder {
+                background-color: rgba(grey, 0.4);
+                border-radius: 10px;
+                .barOn {
+                    @extend .barIntro;
+                    width: 85%;
+                }
+            }*/ }
+    .left-skill-item h3 {
+      font-size: 1.6em; }
+    .left-skill-item:nth-child(2) .barUnder {
+      background-color: rgba(128, 128, 128, 0.4);
+      border-radius: 10px; }
+      .left-skill-item:nth-child(2) .barUnder .barOn {
+        width: 85%; }
+    .left-skill-item:nth-child(3) .barUnder {
+      background-color: rgba(128, 128, 128, 0.4);
+      border-radius: 10px; }
+      .left-skill-item:nth-child(3) .barUnder .barOn {
+        width: 70%; }
+    .left-skill-item:nth-child(4) .barUnder {
+      background-color: rgba(128, 128, 128, 0.4);
+      border-radius: 10px; }
+      .left-skill-item:nth-child(4) .barUnder .barOn {
+        width: 50%; }
+    .left-skill-item:nth-child(5) .barUnder {
+      background-color: rgba(128, 128, 128, 0.4);
+      border-radius: 10px; }
+      .left-skill-item:nth-child(5) .barUnder .barOn {
+        width: 50%; }
+    .left-skill-item:nth-child(6) .barUnder {
+      background-color: rgba(128, 128, 128, 0.4);
+      border-radius: 10px; }
+      .left-skill-item:nth-child(6) .barUnder .barOn {
+        width: 40%; }
+  .left-language-item h3 {
+    font-size: 1.76em; }
+  .left-language-item p {
+    padding: 5px;
+    margin-left: 20px;
+    font-size: 1.6em; }
+  .left-soft-list {
+    margin-top: 10px;
+    font-size: 1.6em; }
+
+.rigth {
+  padding: 20px;
+  font-size: 1.2em; }
+  .rigth-title {
+    padding: 5px;
+    text-transform: capitalize;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+    .rigth-title h1 {
+      margin-left: 20px; }
+  .rigth-exp {
+    padding: 10px; }
+    .rigth-exp-date {
+      color: #A15088; }
+      .rigth-exp-date span {
+        font-size: 1.6em;
+        margin-left: 10px; }
+    .rigth-exp-text {
+      font-size: 1.4em; }
+    .rigth-exp-country {
+      font-size: 1.4em; }
+      .rigth-exp-country::before {
+        margin: 0 15px;
+        font-size: 1.4em;
+        content: "|"; }
+  .rigth-list {
+    margin-left: 10px;
+    font-size: 1.6em; }
+  .rigth:nth-child(2) {
+    margin-top: 20px; }
