@@ -42,7 +42,8 @@ i {
   margin-top: 10px; }
 
 hr {
-  width: 90%; }
+  width: 90%;
+  margin: 5px 0; }
 
 h2 {
   display: inline-block; }
@@ -145,8 +146,15 @@ h2 {
     display: inline-flex; }
     .rigth-title h1 {
       margin-left: 20px; }
+    @media screen and (max-width: 650px) {
+      .rigth-title {
+        font-size: 0.72em; }
+        .rigth-title h1 {
+          font-size: 3.2em; } }
   .rigth-exp {
     padding: 0 10px; }
+    .rigth-exp h2 {
+      font-size: 2.4em; }
     .rigth-exp-date {
       color: #44887B; }
       .rigth-exp-date span {
@@ -167,8 +175,18 @@ h2 {
     font-size: 1.6em; }
     .rigth-list ul li::first-letter {
       text-transform: uppercase; }
+  @media screen and (max-width: 650px) {
+    .rigth:nth-child(1) {
+      margin-top: 20px;
+      font-size: 0.9em;
+      padding: 5px; } }
   .rigth:nth-child(2) {
     margin-top: 20px; }
+    @media screen and (max-width: 650px) {
+      .rigth:nth-child(2) {
+        margin-top: 20px;
+        font-size: 0.9em;
+        padding: 5px; } }
 
 .container-fluid .footer {
   border-radius: 0px;
