@@ -73,6 +73,9 @@ body {
     font-family: $font1;
     color: $text-color;
     background-color: rgba($color-primary-4, 0.1s);
+    @media (min-width: 651px) and (max-width: 970px) {
+        font-size: 0.7em;
+    }
 }
 
 i {
@@ -243,26 +246,28 @@ h2 {
 .rigth {
     @extend .box;
     padding: 20px 60px;
-    font-size: $font-size-small;
+    font-size: $font-size-small*.9;
     &-title {
         padding: 5px;
         text-transform: capitalize;
         display: inline-flex;
         h1 {
             margin-left: 20px;
-           
         }
-         @media screen and (max-width: 650px) {
-                font-size: $font-size-small-x*0.8;
-                h1{
-                    font-size: $font-size-large*2;
-                }
+        @media only screen and(max-width: 650px) {
+            font-size: $font-size-small-x*0.8;
+            h1 {
+                font-size: $font-size-large*2;
             }
+        }
     }
     &-exp {
         padding: 0 10px;
-        h2{
+        h2 {
             font-size: $font-size-large*1.5;
+            @media (min-width: 651px) and (max-width: 970px) {
+        font-size: $font-size-large*1.25;
+    }
         }
         &-date {
             color: $color-primary-2;
@@ -310,7 +315,7 @@ h2 {
     }
 }
 
-.container-fluid .footer {
+.container-fluid .footers {
     border-radius: 0px;
     background-color: $color-primary-2;
     height: 50px;

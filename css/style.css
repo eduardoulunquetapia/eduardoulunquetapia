@@ -36,6 +36,9 @@ body {
   font-family: "Poppins", sans-serif;
   color: grey;
   background-color: rgba(64, 0, 45, 0.1); }
+  @media (min-width: 651px) and (max-width: 970px) {
+    body {
+      font-size: 0.7em; } }
 
 i {
   color: #44887B;
@@ -137,7 +140,7 @@ h2 {
 
 .rigth {
   padding: 20px 60px;
-  font-size: 1.2em; }
+  font-size: 1.08em; }
   .rigth-title {
     padding: 5px;
     text-transform: capitalize;
@@ -146,7 +149,7 @@ h2 {
     display: inline-flex; }
     .rigth-title h1 {
       margin-left: 20px; }
-    @media screen and (max-width: 650px) {
+    @media only screen and (max-width: 650px) {
       .rigth-title {
         font-size: 0.72em; }
         .rigth-title h1 {
@@ -155,6 +158,9 @@ h2 {
     padding: 0 10px; }
     .rigth-exp h2 {
       font-size: 2.4em; }
+      @media (min-width: 651px) and (max-width: 970px) {
+        .rigth-exp h2 {
+          font-size: 2em; } }
     .rigth-exp-date {
       color: #44887B; }
       .rigth-exp-date span {
@@ -188,7 +194,7 @@ h2 {
         font-size: 0.9em;
         padding: 5px; } }
 
-.container-fluid .footer {
+.container-fluid .footers {
   border-radius: 0px;
   background-color: #44887B;
   height: 50px;
@@ -198,10 +204,10 @@ h2 {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
-  .container-fluid .footer-text {
+  .container-fluid .footers-text {
     color: #fff;
     line-height: 50px;
     font-size: 1.6em; }
-    .container-fluid .footer-text .fa-copyright {
+    .container-fluid .footers-text .fa-copyright {
       color: white;
       margin: 0 5px 0 10px; }
