@@ -138,7 +138,28 @@ h2 {
       .left-social-link a i:hover {
         color: #C180AD; }
 
+.lang {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 1.6em; }
+  .lang a {
+    color: grey; }
+    .lang a:nth-child(2) {
+      margin-left: 10px; }
+      .lang a:nth-child(2):before {
+        content: "|";
+        font-size: 1.2em;
+        margin-right: 10px;
+        color: grey; }
+    .lang a:hover {
+      color: #44887B;
+      text-decoration: none; }
+
 .rigth {
+  position: relative;
   padding: 20px 60px;
   font-size: 1.08em; }
   .rigth-title {
@@ -193,6 +214,16 @@ h2 {
         margin-top: 20px;
         font-size: 0.9em;
         padding: 5px; } }
+
+.cv {
+  /*position: absolute;*/
+  font-size: 1.4em; }
+  .cv a {
+    margin-top: 20px;
+    clear: both;
+    float: right; }
+    .cv a {
+      margin-top: 10px; }
 
 .container-fluid .footers {
   border-radius: 0px;
