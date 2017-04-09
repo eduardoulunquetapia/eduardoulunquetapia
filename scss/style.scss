@@ -343,19 +343,12 @@ h2 {
 }
 
 .cv {
-    /*position: absolute;*/
-    font-size: $font-size-medium;
-    a {
-        margin-top: 20px;
-        clear: both;
-        float: right;
-        & {
-            margin-top: 10px;
-        }
-    }
+    display: flex;
+    justify-content: flex-end;
+   
 }
 
-.container-fluid .footers {
+.container .footer {
     border-radius: 0px;
     background-color: $color-primary-2;
     height: 50px;

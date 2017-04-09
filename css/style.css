@@ -216,16 +216,14 @@ h2 {
         padding: 5px; } }
 
 .cv {
-  /*position: absolute;*/
-  font-size: 1.4em; }
-  .cv a {
-    margin-top: 20px;
-    clear: both;
-    float: right; }
-    .cv a {
-      margin-top: 10px; }
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
 
-.container-fluid .footers {
+.container .footer {
   border-radius: 0px;
   background-color: #44887B;
   height: 50px;
@@ -235,10 +233,10 @@ h2 {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
-  .container-fluid .footers-text {
+  .container .footer-text {
     color: #fff;
     line-height: 50px;
     font-size: 1.6em; }
-    .container-fluid .footers-text .fa-copyright {
+    .container .footer-text .fa-copyright {
       color: white;
       margin: 0 5px 0 10px; }
