@@ -100,7 +100,7 @@ h2 {
     background-color: rgba(128, 128, 128, 0.4);
     border-radius: 10px; }
     .left-skill-item:nth-child(5) .barUnder .barOn {
-      width: 60%; }
+      width: 65%; }
   .left-skill-item:nth-child(6) .barUnder {
     background-color: rgba(128, 128, 128, 0.4);
     border-radius: 10px; }
@@ -115,7 +115,7 @@ h2 {
     background-color: rgba(128, 128, 128, 0.4);
     border-radius: 10px; }
     .left-skill-item:nth-child(8) .barUnder .barOn {
-      width: 45%; }
+      width: 50%; }
   .left-language-item h3 {
     font-size: 1.76em; }
   .left-language-item p {
