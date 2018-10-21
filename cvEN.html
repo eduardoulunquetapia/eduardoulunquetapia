@@ -1,16 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# profile: http://ogp.me/ns/profile#">
     <title>CV</title>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="./images/icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Eduardo Ulunque Tapia">
+    <meta property="og:type" content="profile" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:image" content="https://eduardoulunquetapia.github.io/eduardoulunquetapia/images/edu-fb.jpg">
+    <meta property="fb:app_id" content="1919781414772659"/>
+    <meta name="title" property="og:title" content="Eduardo Ulunque Tapia - Frontend developer Architect">
+    <meta name="description" property="og:description" content="I like the technology and the power to create web applications in a client environment where web design and UX & UI reach everyone. Our limit is in our creativity.
+Development of the web application, Client environment, UX & UI, Web layout, Progressive technology.">
+    <meta property="og:url" content="https://eduardoulunquetapia.github.io/eduardoulunquetapia/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="I like the technology and the power to create web applications in a client environment where web design and UX & UI reach everyone. Our limit is in our creativity.
+Development of the web application, Client environment, UX & UI, Web layout, Progressive technology.">
+    <meta name="twitter:title" content="Eduardo Ulunque Tapia - Frontend developer Architect">
+    <meta name="twitter:site" content="https://eduardoulunquetapia.github.io/eduardoulunquetapia/">
+    <meta name="twitter:image" content="https://eduardoulunquetapia.github.io/eduardoulunquetapia/images/edu-fb.jpg">
+    <meta name="twitter:creator" content="@duard_bol">
+      <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '1919781414772659',
+              cookie     : true,
+              xfbml      : true,
+              version    : 'v1.0'
+            });
+            FB.AppEvents.logPageView();     
+          };
+
+         (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+          js.src = "https://connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/7b0c7dd954.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lora|Poppins" rel="stylesheet">
-    <script src="./jscript/jscript"></script>
+    <script src="./jscript/jscript.js"></script>
     <link href="./css/style.css" rel="stylesheet">
 </head>
 
@@ -20,7 +56,7 @@
             <div class="col-sm-4 ">
                 <div class=" left">
                     <div class=" left-image">
-                        <div class="hidden-sm hidden-md hidden-lg lang"><a href="index.html">ES</a><a href="#">EN</a></div>
+                        <div class="hidden-sm hidden-md hidden-lg lang"><a title="Spanish" href="index.html">ES</a><a title="English" href="#">EN</a></div>
                         <img src="./images/me2.jpg" width="100%" alt="">
                         <div class="name"><b>eduardo ulunque </b></div>
                     </div>
@@ -129,9 +165,9 @@
                             </h2>
                         </div>
                         <div class="left-social-link">
-                            <a href="https://www.linkedin.com/in/eduardo-ulunque-580092b6/" target="blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
-                            <a href="https://twitter.com/duard_bol" target="blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
-                            <a href="https://github.com/duard1384" target="blank"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+                            <a title="go Facebook" href="https://www.linkedin.com/in/eduardo-ulunque-580092b6/" target="blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+                            <a title="go Twitter" href="https://twitter.com/duard_bol" target="blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                            <a title="go Github" href="https://github.com/duard1384" target="blank"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
 
                         </div>
                     </div>
@@ -464,9 +500,8 @@
                         </details>
                     </div>
                     <div class="cv">
-                        <a href="files/cvEN-2017.pdf" download> DOWNLOAD <i class="fa fa-file-pdf-o fa-3x" aria-hidden="true"></i></a>
+                        <a title="Download Curriculum" href="files/cvEN-2017.pdf"  download> DOWNLOAD <i class="fa fa-file-pdf-o fa-3x" aria-hidden="true"></i></a>
                     </div>
-
                 </div>
             </div>
 
@@ -474,7 +509,20 @@
         <div class="row box footer">
             <p class="footer-text">by <i class="fa fa-copyright" aria-hidden="true"></i>DuardDesign 2018</p>
         </div>
+         <p class="footer-text" style="text-align: center;">
+            <a href="./politica-de-privacidad.html" target="blank">politica de privacidad</a>
+        </p>
     </div>
+ 
+<script>
+    function logCompletedTutorialEvent(contentData, contentId, success) {
+        var params = {};
+        params[FB.AppEvents.ParameterNames.CONTENT] = contentData;
+        params[FB.AppEvents.ParameterNames.CONTENT_ID] = contentId;
+        params[FB.AppEvents.ParameterNames.SUCCESS] = success ? 1 : 0;
+        FB.AppEvents.logEvent(FB.AppEvents.EventNames.COMPLETED_TUTORIAL, null, params);
+    }
+</script>
 </body>
 
 </html>
