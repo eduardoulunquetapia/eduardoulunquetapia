@@ -223,7 +223,24 @@ h2 {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end; }
-
+.cv {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+}
+.cv a{
+    color:#fff;
+    display:flex;
+    align-items:center;
+}
+.cv a .fa{
+    margin-top:0;
+    color:#fff;
+    padding:0 0 0 5px;
+}
 .container .footer {
   border-radius: 0px;
   background-color: #44887B;
