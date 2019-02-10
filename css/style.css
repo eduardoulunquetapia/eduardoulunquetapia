@@ -29,6 +29,9 @@
 /*
 *ESTADOS = accion a un evento de javascript: .is-hide/.is-show
 */
+i{
+pointer-events:none !important;
+}
 /*
 * BASE= (inicializar elementos):elementos html
 */
