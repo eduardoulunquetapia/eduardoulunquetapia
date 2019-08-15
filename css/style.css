@@ -1,5 +1,5 @@
 /*
-*TEMA = constants : (colores, estilos, fuentes) 
+*TEMA = constants : (colores, estilos, fuentes) y mass
 */
 /*
 *MODULOS = (botones, iconos, widget):varibles mixin..extend...
@@ -124,11 +124,7 @@ h2 {
     font-size: 1.6em; }
   .left-social-link {
     font-size: 1.92em;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center; }
     .left-social-link a {
       margin: 10px 15px; }
@@ -141,8 +137,6 @@ h2 {
   .rigth-title {
     padding: 5px;
     text-transform: capitalize;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
     display: inline-flex; }
     .rigth-title h1 {
       margin-left: 20px; }
@@ -192,11 +186,7 @@ h2 {
   border-radius: 0px;
   background-color: #44887B;
   height: 50px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center; }
   .container-fluid .footer-text {
     color: #fff;

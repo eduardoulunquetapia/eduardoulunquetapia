@@ -1,0 +1,26 @@
+{
+  "name": "eduardoulunquetapia",
+  "version": "1.0.0",
+  "description": "cv of eduardo ulunque tapia",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w scss/ -o css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardoulunquetapia/eduardoulunquetapia.git"
+  },
+  "keywords": [],
+  "author": "eduardo ulunque tapia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduardoulunquetapia/eduardoulunquetapia/issues"
+  },
+  "homepage": "https://github.com/eduardoulunquetapia/eduardoulunquetapia#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {}
+}
