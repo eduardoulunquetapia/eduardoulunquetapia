@@ -9,6 +9,7 @@
   padding-right: 0;
   border-radius: 5px;
   background-color: #fff;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); }
 
 .subTitle, .left-skill, .left-language, .left-soft, .left-social {
@@ -28,6 +29,9 @@
 /*
 *ESTADOS = accion a un evento de javascript: .is-hide/.is-show
 */
+i{
+pointer-events:none !important;
+}
 /*
 * BASE= (inicializar elementos):elementos html
 */
@@ -36,6 +40,9 @@ body {
   font-family: "Poppins", sans-serif;
   color: grey;
   background-color: rgba(64, 0, 45, 0.1); }
+  @media (min-width: 651px) and (max-width: 970px) {
+    body {
+      font-size: 0.7em; } }
 
 i {
   color: #44887B;
@@ -97,7 +104,7 @@ h2 {
     background-color: rgba(128, 128, 128, 0.4);
     border-radius: 10px; }
     .left-skill-item:nth-child(5) .barUnder .barOn {
-      width: 60%; }
+      width: 65%; }
   .left-skill-item:nth-child(6) .barUnder {
     background-color: rgba(128, 128, 128, 0.4);
     border-radius: 10px; }
@@ -112,7 +119,7 @@ h2 {
     background-color: rgba(128, 128, 128, 0.4);
     border-radius: 10px; }
     .left-skill-item:nth-child(8) .barUnder .barOn {
-      width: 45%; }
+      width: 50%; }
   .left-language-item h3 {
     font-size: 1.76em; }
   .left-language-item p {
@@ -124,23 +131,57 @@ h2 {
     font-size: 1.6em; }
   .left-social-link {
     font-size: 1.92em;
+<<<<<<< HEAD
     display: flex;
+=======
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+>>>>>>> gh-pages
     justify-content: center; }
     .left-social-link a {
       margin: 10px 15px; }
       .left-social-link a i:hover {
         color: #C180AD; }
 
+.lang {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 1.6em; }
+  .lang a {
+    color: grey; }
+    .lang a:nth-child(2) {
+      margin-left: 10px; }
+      .lang a:nth-child(2):before {
+        content: "|";
+        font-size: 1.2em;
+        margin-right: 10px;
+        color: grey; }
+    .lang a:hover {
+      color: #44887B;
+      text-decoration: none; }
+
 .rigth {
+  position: relative;
   padding: 20px 60px;
-  font-size: 1.2em; }
+  font-size: 1.08em; }
   .rigth-title {
     padding: 5px;
     text-transform: capitalize;
+<<<<<<< HEAD
+=======
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+>>>>>>> gh-pages
     display: inline-flex; }
     .rigth-title h1 {
       margin-left: 20px; }
-    @media screen and (max-width: 650px) {
+    @media only screen and (max-width: 650px) {
       .rigth-title {
         font-size: 0.72em; }
         .rigth-title h1 {
@@ -149,6 +190,9 @@ h2 {
     padding: 0 10px; }
     .rigth-exp h2 {
       font-size: 2.4em; }
+      @media (min-width: 651px) and (max-width: 970px) {
+        .rigth-exp h2 {
+          font-size: 2em; } }
     .rigth-exp-date {
       color: #44887B; }
       .rigth-exp-date span {
@@ -182,16 +226,49 @@ h2 {
         font-size: 0.9em;
         padding: 5px; } }
 
-.container-fluid .footer {
+.cv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+.cv {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+}
+.cv a{
+    color:#fff;
+    display:flex;
+    align-items:center;
+}
+.cv a .fa{
+    margin-top:0;
+    color:#fff;
+    padding:0 0 0 5px;
+}
+.container .footer {
   border-radius: 0px;
   background-color: #44887B;
   height: 50px;
+<<<<<<< HEAD
   display: flex;
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+>>>>>>> gh-pages
   justify-content: center; }
-  .container-fluid .footer-text {
+  .container .footer-text {
     color: #fff;
     line-height: 50px;
     font-size: 1.6em; }
-    .container-fluid .footer-text .fa-copyright {
+    .container .footer-text .fa-copyright {
       color: white;
       margin: 0 5px 0 10px; }

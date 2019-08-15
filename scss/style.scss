@@ -73,6 +73,9 @@ body {
     font-family: $font1;
     color: $text-color;
     background-color: rgba($color-primary-4, 0.1s);
+    @media (min-width: 651px) and (max-width: 970px) {
+        font-size: 0.7em;
+    }
 }
 
 i {
@@ -168,7 +171,7 @@ h2 {
                     border-radius: 10px;
                     .barOn {
                         @extend .barIntro;
-                        width: 60%;
+                        width: 65%;
                     }
                 }
             }
@@ -198,7 +201,7 @@ h2 {
                     border-radius: 10px;
                     .barOn {
                         @extend .barIntro;
-                        width: 45%;
+                        width: 50%;
                     }
                 }
             }
@@ -240,29 +243,62 @@ h2 {
     }
 }
 
+.lang {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: $font-size-large;
+    a {
+        color: grey;
+        &:nth-child(1) {}
+        &:nth-child(2) {
+            margin-left: 10px;
+            &:before {
+                content: "|";
+                font-size: $font-size-small;
+                margin-right: 10px;
+                color: grey;
+            }
+        }
+        &:hover {
+            color: $color-primary-2;
+            text-decoration: none;
+        }
+    }
+}
+
 .rigth {
+    position: relative;
     @extend .box;
     padding: 20px 60px;
-    font-size: $font-size-small;
+    font-size: $font-size-small*.9;
     &-title {
         padding: 5px;
         text-transform: capitalize;
         display: inline-flex;
         h1 {
             margin-left: 20px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> gh-pages
         }
-         @media screen and (max-width: 650px) {
-                font-size: $font-size-small-x*0.8;
-                h1{
-                    font-size: $font-size-large*2;
-                }
+        @media only screen and(max-width: 650px) {
+            font-size: $font-size-small-x*0.8;
+            h1 {
+                font-size: $font-size-large*2;
             }
+        }
     }
     &-exp {
         padding: 0 10px;
-        h2{
+        h2 {
             font-size: $font-size-large*1.5;
+            @media (min-width: 651px) and (max-width: 970px) {
+                font-size: $font-size-large*1.25;
+            }
         }
         &-date {
             color: $color-primary-2;
@@ -310,7 +346,13 @@ h2 {
     }
 }
 
-.container-fluid .footer {
+.cv {
+    display: flex;
+    justify-content: flex-end;
+   
+}
+
+.container .footer {
     border-radius: 0px;
     background-color: $color-primary-2;
     height: 50px;
