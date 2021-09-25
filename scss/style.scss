@@ -205,6 +205,17 @@ h2 {
                     }
                 }
             }
+            
+            &:nth-child(9) {
+                .barUnder {
+                    background-color: rgba(grey, 0.4);
+                    border-radius: 10px;
+                    .barOn {
+                        @extend .barIntro;
+                        width: 60%;
+                    }
+                }
+            }
         }
     }
     &-language {
